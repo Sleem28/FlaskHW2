@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Task 7
+{% endblock %}
+
+{% block content %}
+<h1 class="main__title">Enter a whole number.</h1>
+<section class="choose__task center">
+    <form action="/task7" method="post" class="form">
+        <input type="number" name="digit" placeholder="Enter a digit to calculating" class="field">
+        <input type="submit" value="Send" class="btn">
+    </form>
+</section>
+{% endblock %}

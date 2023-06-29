@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Task 9
+{% endblock %}
+
+{% block content %}
+<h1 class="main__title">Enter your name and email.</h1>
+<section class="choose__task center">
+    <form action="/task9" method="post" class="form">
+        <input type="text" name="name" placeholder="Enter your name:" class="field"><br>
+        <input type="email" name="email" placeholder="Enter your email:" class="field"><br>
+        <input type="submit" value="Send" class="btn">
+    </form>
+</section>
+{% endblock %}
